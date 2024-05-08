@@ -1,0 +1,4 @@
+.form-control {
+  border-radius: 5px; /* Redondea las esquinas de los campos de entrada */
+  border: 1px solid #ced4da; /* Establece un borde para los campos de entrada */
+ }

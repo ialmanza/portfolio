@@ -1,0 +1,44 @@
+#ingebilabImage {
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Estilo cuando la imagen está ampliada */
+#ingebilabImage.zoomed {
+  transform: scale(1.5); /* Ajusta el valor según sea necesario */
+  border: 2px solid #000; /* Opcional: agrega un borde */
+  box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Opcional: agrega un efecto de sombra */
+}
+
+.circle-image {
+  width: 250px; /* Define el ancho de la imagen */
+  height: 250px; /* Define la altura de la imagen */
+  border-radius: 50%; /* Hace que la imagen tenga forma de círculo */
+  overflow: hidden; /* Oculta cualquier parte de la imagen que se salga del círculo */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.custom-heading {
+  font-family: 'Arial', sans-serif; /* Aplica la fuente Montserrat */
+  font-size: 75px; /* Establece el tamaño de la fuente en 75 */
+  margin: 70px 0px 30px;
+}
+
+.navbar-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  text-align: center;
+}
+
+.circle-container {
+  width: 250px; /* Cambia este valor según el tamaño deseado */
+  height: 250px; /* Mantén el mismo valor que el ancho */
+  border-radius: 50%; /* Esto mantiene la forma circular del contenedor */
+  overflow: hidden; /* Esto asegura que la imagen no sobresalga del contenedor circular */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+
