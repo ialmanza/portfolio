@@ -46,3 +46,13 @@ body {
   color: blue; /* Cambia el color del texto al pasar el mouse */
 }
 
+a{
+  text-decoration: none;
+  color:black;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+
+a:hover{
+  color:blue;
+}
