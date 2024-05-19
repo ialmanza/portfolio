@@ -1,53 +1,53 @@
 
-/* Estilos generales para las tarjetas */
+
 .card {
-  border-radius: 10px; /* Redondea las esquinas de las tarjetas */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade sombra para dar profundidad */
-  transition: 0.3s; /* Transición suave para los efectos de hover */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
  }
 
  .card:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta la sombra al pasar el mouse */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
  }
 
- /* Estilos específicos para el título y el texto dentro de la tarjeta */
+
  .card-title {
-  font-size: 1.25rem; /* Ajusta el tamaño del título */
-  font-weight: bold; /* Hace el título en negrita */
+  font-size: 1.25rem;
+  font-weight: bold;
  }
 
  .card-text {
-  font-size: 1rem; /* Ajusta el tamaño del texto */
-  color: #333; /* Cambia el color del texto */
+  font-size: 1rem;
+  color: #333;
  }
 
- /* Estilos para el botón dentro de la tarjeta */
+
  .btn-primary {
-  background-color: #007bff; /* Cambia el color de fondo del botón */
-  border-color: #007bff; /* Cambia el color del borde del botón */
+  background-color: #007bff;
+  border-color: #007bff;
  }
 
  .btn-primary:hover {
-  background-color: #0056b3; /* Cambia el color de fondo del botón al pasar el mouse */
-  border-color: #0056b3; /* Cambia el color del borde del botón al pasar el mouse */
+  background-color: #0056b3;
+  border-color: #0056b3;
  }
 
- /* Estilos por defecto */
+
 #ingebilabImage {
   transition: transform 0.3s ease-in-out;
 }
 
-/* Estilo cuando la imagen está ampliada */
+
 #ingebilabImage.zoomed {
-  transform: scale(1.5); /* Ajusta el valor según sea necesario */
-  border: 2px solid #000; /* Opcional: agrega un borde */
-  box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Opcional: agrega un efecto de sombra */
+  transform: scale(1.5);
+  border: 2px solid #000;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 .btn-custom {
-  background-color: #f8f9fa; /* Color de fondo más claro */
-  color: #343a40; /* Color del texto */
-  border-color:none; /* Color del borde */
+  background-color: #f8f9fa;
+  color: #343a40;
+  border-color:none;
   outline: none
 }
 
@@ -58,4 +58,34 @@
   border-color: none;
 }
 
+.skills-section {
+  margin-top: 30px;
+}
+
+.skills-heading {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.skills-list li {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+.skills-list img {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
 

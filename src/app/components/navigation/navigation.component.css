@@ -1,6 +1,6 @@
 .navbar .btn {
-  padding: 10px 20px; /* Ajusta el relleno para agrandar los botones */
-  margin-right: 10px; /* Ajusta el margen entre los botones */
+  padding: 10px 20px;
+  margin-right: 10px;
 }
 
 .navbar-buttons {
@@ -15,35 +15,35 @@
 }
 
 .navbar-brand {
-  font-size: 24px; /* Aumenta el tamaño de la fuente del logo */
-  color: #007bff; /* Cambia el color del logo */
+  font-size: 24px;
+  color: #007bff;
 }
 
 
-/* Estilos generales */
+
 body {
-  font-family: 'Arial', sans-serif; /* Cambia esto por la fuente que prefieras */
+  font-family: 'Arial', sans-serif;
 }
 
 .navbar {
-  padding: 20px 0; /* Ajusta el padding vertical */
+  padding: 20px 0;
 }
 
 
 .btn {
-  padding: 10px 15px; /* Ajusta el padding de los botones */
-  border-radius: 5px; /* Redondea las esquinas de los botones */
+  padding: 10px 15px;
+  border-radius: 5px;
 }
 
 .btn:hover {
-  color: blue; /* Cambia el color del texto al pasar el mouse */
+  color: blue;
 }
 
 .navbar.nav-link {
-  color: #0874e8; /* Cambia el color del texto */
+  color: #0874e8;
 }
 .navbar.nav-link:hover {
-  color: blue; /* Cambia el color del texto al pasar el mouse */
+  color: blue;
 }
 
 a{

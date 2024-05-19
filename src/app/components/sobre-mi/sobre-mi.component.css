@@ -1,4 +1,64 @@
 .h1{
-  font-family: 'Montserrat', sans-serif; /* Aplica la fuente Montserrat */
+  font-family: 'Montserrat', sans-serif;
 
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+h1 {
+  color: #333;
+  text-align: center;
+}
+p {
+  color: #666;
+  text-align: justify;
+}
+.about-me {
+  margin-top: 30px;
+}
+
+.skills-section {
+  margin-top: 30px;
+}
+
+.skills-heading {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.skills-list li {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+.skills-list img {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
 }
