@@ -55,6 +55,9 @@
   transition: transform 0.3s ease-in-out;
 }
 
+#veterinaria {
+  transition: transform 0.3s ease-in-out;
+}
 #ingebilabImage.zoomed {
   transform: scale(1.5);
   border: 2px solid #000;
@@ -62,6 +65,12 @@
 }
 
 #todoappImage.zoomed {
+  transform: scale(1.5);
+  border: 2px solid #000;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+#veterinaria.zoomed {
   transform: scale(1.5);
   border: 2px solid #000;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);

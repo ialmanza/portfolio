@@ -20,6 +20,9 @@ export class ProyectosComponent {
     window.open('https://tareasparahacer.netlify.app/', '_blank');
   }
 
+  veterinaria() {
+    window.open('https://gestionarveterinaria.netlify.app/', '_blank');
+  }
   onImageClickIngebilab() {
     this.isImageZoomed =!this.isImageZoomed;
     const imageElement = document.getElementById('ingebilabImage') as HTMLElement;
@@ -39,6 +42,16 @@ export class ProyectosComponent {
       imageElement.classList.remove('zoomed');
     }
   }
+  onImageClickVeterinaria() {
+    this.isImageZoomed =!this.isImageZoomed;
+    const imageElement = document.getElementById('veterinaria') as HTMLElement;
+    if (this.isImageZoomed) {
+      imageElement.classList.add('zoomed');
+    } else {
+      imageElement.classList.remove('zoomed');
+    }
+  }
+
   verCodigoMyLab() {
     window.open('https://github.com/ialmanza/My_Lab', '_blank');
   }
@@ -46,5 +59,11 @@ export class ProyectosComponent {
   verCodigoToDoApp() {
     window.open('https://github.com/ialmanza/task_manager', '_blank');
   }
+
+  verCodigoVeterianria() {
+    window.open('https://github.com/ialmanza/veterinaria_backup', '_blank');
+  }
+
+
 }
 
