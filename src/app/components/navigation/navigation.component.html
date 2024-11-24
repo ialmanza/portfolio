@@ -3,12 +3,28 @@
     <a href="/" class="navbar-brand">
       IA
     </a>
+    <!-- Icono de menú para la versión móvil -->
+    <div class="menu-icon" (click)="toggleMenu()">☰</div>
     <div class="navbar-buttons">
-    <a href="/sobre-mi">Sobre Mi</a>
+
     <a href="/proyectos">Proyectos</a>
     <a href="/contactame">Contactame</a>
+    <a href="/sobre-mi">Sobre Mi</a>
     <a href="assets/Israel Almanza CV.pdf" download="Israel Almanza CV">CV</a>
     </div>
+  </div>
+
+  <!-- Enlaces visibles en la versión móvil -->
+  <div class="mobile-nav-links" [ngClass]="{ 'active': isMenuOpen }">
+    <!-- Imagen centrada en el menú móvil -->
+    <!-- <div class="menu-image">
+      <img src="images/home.png" alt="Menu Image" onclick="window.location.href='/'">
+    </div> -->
+    <a href="/" (click)="toggleMenu()">Inicio</a>
+    <a href="/proyectos" (click)="toggleMenu()">Proyectos</a>
+    <a href="/contactame" (click)="toggleMenu()">Contactame</a>
+    <a href="/sobre-mi" (click)="toggleMenu()">Sobre Mi</a>
+    <a href="assets/Israel Almanza_CV.pdf" download="Israel Almanza_CV">CV</a>
   </div>
 </nav>
 
