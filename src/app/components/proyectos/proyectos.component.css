@@ -1,11 +1,46 @@
-
- .card {
+.card {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: 0.3s;
-  height: 100%; /* Asegura que todas las tarjetas tengan la misma altura */
   display: flex;
   flex-direction: column;
+  height: 100%; /* Cambiado de 50% a 100% */
+  margin-bottom: 20px;
+}
+
+/* Media query para móviles */
+@media (max-width: 768px) {
+  .card {
+    margin: 10px 0;
+  }
+
+  .card-body {
+    padding: 15px;
+  }
+
+  .skills-list {
+    justify-content: flex-start;
+  }
+
+  .skills-list li {
+    font-size: 16px;
+    margin: 5px;
+  }
+
+  .btn-custom {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  .container.d-flex.justify-content-between {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .container.d-flex.justify-content-between .btn-custom {
+    width: 100%;
+    margin: 5px 0;
+  }
 }
 
 .card:hover {
@@ -21,15 +56,23 @@
 
 .skills-list {
   flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  gap: 10px; /* Añadido para mejor espaciado */
 }
 
 .container.d-flex.justify-content-between {
-  margin-top: auto; /* Empuja el contenedor de los botones al final de la tarjeta */
+  margin-top: auto;
+  gap: 10px; /* Añadido para mejor espaciado entre botones */
 }
 
 .card-title {
   font-size: 1.25rem;
   font-weight: bold;
+  margin-bottom: 1rem;
 }
 
 .card-text {
@@ -37,82 +80,25 @@
   color: #333;
 }
 
-.btn-primary {
-  background-color: #007bff;
-  border-color: #007bff;
-}
-
-.btn-primary:hover {
-  background-color: #0056b3;
-  border-color: #0056b3;
-}
-
-#ingebilabImage {
-  transition: transform 0.3s ease-in-out;
-}
-
-#todoappImage {
-  transition: transform 0.3s ease-in-out;
-}
-
-#veterinaria {
-  transition: transform 0.3s ease-in-out;
-}
-#ingebilabImage.zoomed {
-  transform: scale(1.5);
-  border: 2px solid #000;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
-}
-
-#todoappImage.zoomed {
-  transform: scale(1.5);
-  border: 2px solid #000;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
-}
-
-#veterinaria.zoomed {
-  transform: scale(1.5);
-  border: 2px solid #000;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
-}
-
-
 .btn-custom {
   background-color: #f8f9fa;
   color: #343a40;
-  border-color:none;
-  outline: none;
+  border: none;
+  padding: 10px 15px;
+  transition: color 0.3s ease;
 }
 
 .btn-custom:hover {
   color: blue;
-  outline: none;
-  border-color: none;
-}
-
-.skills-section {
-  margin-top: 30px;
-}
-
-.skills-heading {
-  text-align: center;
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-.skills-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  list-style: none;
-  padding: 0;
+  background-color: #f8f9fa;
 }
 
 .skills-list li {
-  margin: 10px;
+  margin: 5px;
   display: flex;
   align-items: center;
-  font-size: 18px;
+  font-size: 16px;
+  white-space: nowrap;
 }
 
 .skills-list img {
@@ -121,15 +107,61 @@
   margin-right: 8px;
 }
 
+/* Estilos para las imágenes y efectos de zoom */
+#veterinaria,
+#ingebilabImage,
+#todoappImage {
+  transition: transform 0.3s ease-in-out;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.zoomed {
+  transform: scale(1.5);
+  border: 2px solid #000;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  z-index: 1;
+}
+
+/* Estilos para la sección de contacto */
 .contact-info {
   margin-top: 30px;
   text-align: center;
+  padding: 20px;
 }
+
 .contact-info p {
-  margin: 5px 0;
+  margin: 10px 0;
 }
+
 .contact-info p a {
   color: #333;
   text-decoration: none;
   font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.contact-info p a:hover {
+  color: blue;
+}
+
+a {
+  text-decoration: none;
+}
+
+.etiquetap {
+  font-weight: bold;
+}
+
+/* Media query para tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .skills-list li {
+    font-size: 14px;
+  }
+
+  .skills-list img {
+    width: 20px;
+    height: 20px;
+  }
 }

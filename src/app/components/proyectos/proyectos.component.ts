@@ -23,6 +23,15 @@ export class ProyectosComponent {
   veterinaria() {
     window.open('https://gestionarveterinaria.netlify.app/', '_blank');
   }
+
+  restaurante() {
+    window.open('https://gestiondereservas.netlify.app/', '_blank');
+  }
+
+  restauranteAdministrativo() {
+    window.open('https://gestiondereservas.netlify.app/admin', '_blank');
+  }
+
   onImageClickIngebilab() {
     this.isImageZoomed =!this.isImageZoomed;
     const imageElement = document.getElementById('ingebilabImage') as HTMLElement;
@@ -64,6 +73,9 @@ export class ProyectosComponent {
     window.open('https://github.com/ialmanza/veterinaria_backup', '_blank');
   }
 
+  verCodigoRestaurante() {
+    window.open('https://github.com/ialmanza/gestion-de-reservas', '_blank');
+  }
 
 }
 

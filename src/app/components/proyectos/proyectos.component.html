@@ -1,11 +1,43 @@
 <div>
   <div class="container p-4">
-    <div class="row">
-      <div class="col-md-4 p-4">
+    <div class="row justify-content-center">
+
+
+      <div class="col-md-5 p-2">
+        <!-- RESTAURANTE -->
+        <div class="card mb-3">
+          <img id="veterinaria" src="assets/restaurante.png" class="card-img-top" alt="Imagen de proyecto"> <br><br>
+          <div class="card-body">
+            <h6 class="card-title justify-content-center text-left">Restaurante</h6>
+            <ul class="skills-list">
+              <li><img src="assets/icons/html.png" alt="HTML"> HTML</li>
+              <li><img src="assets/icons/css-3.png" alt="CSS"> CSS</li>
+              <li><img src="assets/icons/typescript.png" alt="TypeScript"> TypeScript</li>
+              <li><img src="assets/icons/bootstrap.png" alt="Bootstrap"> Bootstrap</li>
+              <li><img src="assets/icons/tailwinds.png" alt="Tailwinds"> Tailwinds</li>
+              <li><img src="assets/icons/angular.png" alt="Angular"> Angular</li>
+              <li><img src="assets/icons/supabase.png" alt="Supabase"> Supabase</li>
+            </ul>
+
+            <div class="container d-flex justify-content-between">
+              <button class="btn btn-custom" (click)="restaurante()">Ver proyecto</button>
+              <button class="btn btn-custom" (click)="verCodigoRestaurante()">Ver codigo</button>
+            </div>
+            <p class="mt-10 text-center text-sm/6 text-gray-500 etiquetap">
+              Web administrativa
+              <a (click)="restauranteAdministrativo()" class="font-semibold text-indigo-600 hover:text-indigo-500">Ingresar</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-5 p-2">
+        <!-- VETERINARIA -->
         <div class="card mb-3">
           <img id="veterinaria" src="assets/veterinaria.png" class="card-img-top" alt="Imagen de proyecto"> <br><br>
           <div class="card-body">
-            <h6 class="card-title justify-content-center text-left">Gestion de Veterinaria </h6>
+            <h6 class="card-title justify-content-center text-left">Gestion de Veterinaria</h6>
             <ul class="skills-list">
               <li><img src="assets/icons/html.png" alt="HTML"> HTML</li>
               <li><img src="assets/icons/css-3.png" alt="CSS"> CSS</li>
@@ -18,52 +50,12 @@
             <div class="container d-flex justify-content-between">
               <button class="btn btn-custom" (click)="veterinaria()">Ver proyecto</button>
               <button class="btn btn-custom" (click)="verCodigoVeterianria()">Ver codigo</button>
-          </div>
-        </div>
-      </div>
-
-    </div>
-      <div class="col-md-4 p-4">
-        <div class="card mb-3">
-          <img id="ingebilabImage" src="assets/ingebilab.png" class="card-img-top" alt="Imagen de proyecto">
-          <div class="card-body">
-            <h6 class="card-title justify-content-center text-left">INGEBI LAB</h6>
-            <ul class="skills-list">
-              <li><img src="assets/icons/html.png" alt="HTML"> HTML</li>
-              <li><img src="assets/icons/css-3.png" alt="CSS"> CSS</li>
-              <li><img src="assets/icons/typescript.png" alt="TypeScript"> TypeScript</li>
-              <li><img src="assets/icons/bootstrap.png" alt="Bootstrap"> Bootstrap</li>
-              <li><img src="assets/icons/angular.png" alt="Angular"> Angular</li>
-              <li><img src="assets/icons/localstorage.png" alt="Localstorage"> Localstorage</li>
-            </ul>
-            <div class="container d-flex justify-content-between">
-              <button class="btn btn-custom" (click)="ingebilab()">Ver proyecto</button>
-              <button class="btn btn-custom" (click)="verCodigoMyLab()">Ver codigo</button>
             </div>
           </div>
         </div>
       </div>
-        <div class="col-md-4 p-4">
-          <div class="card mb-3">
-            <img id="todoappImage" src="assets/tasks.png" class="card-img-top" alt="Imagen de proyecto"> <br><br>
-            <div class="card-body">
-              <h6 class="card-title justify-content-center text-left">To do app </h6>
-              <ul class="skills-list">
-                <li><img src="assets/icons/html.png" alt="HTML"> HTML</li>
-                <li><img src="assets/icons/css-3.png" alt="CSS"> CSS</li>
-                <li><img src="assets/icons/typescript.png" alt="TypeScript"> TypeScript</li>
-                <li><img src="assets/icons/bootstrap.png" alt="Bootstrap"> Bootstrap</li>
-                <li><img src="assets/icons/angular.png" alt="Angular"> Angular</li>
-                <li><img src="assets/icons/localstorage.png" alt="Localstorage"> Localstorage</li>
-              </ul>
-              <div class="container d-flex justify-content-between">
-                <button class="btn btn-custom" (click)="todoapp()">Ver proyecto</button>
-                <button class="btn btn-custom" (click)="verCodigoToDoApp()">Ver codigo</button>
-            </div>
-          </div>
-        </div>
 
-      </div>
+
 
 
     </div>
@@ -81,4 +73,3 @@
     <p>GitHub: <a href="https://github.com/ialmanza?tab=repositories" target="_blank">GitHub</a></p>
   </section>
 </footer>
-
