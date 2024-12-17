@@ -28,6 +28,9 @@ export class ProyectosComponent {
     window.open('https://gestiondereservas.netlify.app/', '_blank');
   }
 
+  corevit() {
+    window.open('https://corevitstudio.netlify.app/', '_blank');
+  }
   restauranteAdministrativo() {
     window.open('https://gestiondereservas.netlify.app/admin', '_blank');
   }

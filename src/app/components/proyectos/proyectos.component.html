@@ -2,8 +2,34 @@
   <div class="container p-4">
     <div class="row justify-content-center">
 
+      <div class="col-md-4 p-2">
+        <!-- VETERINARIA -->
+        <div class="card mb-3">
+          <img id="veterinaria" src="assets/corevitstudio.png" class="card-img-top" alt="Imagen de proyecto"> <br><br>
+          <div class="card-body">
+            <h6 class="card-title justify-content-center text-left">CoreVit Studio</h6>
+            <ul class="skills-list">
+              <li><img src="assets/icons/html.png" alt="HTML"> HTML</li>
+              <li><img src="assets/icons/css-3.png" alt="CSS"> CSS</li>
+              <li><img src="assets/icons/typescript.png" alt="TypeScript"> TypeScript</li>
+              <li><img src="assets/icons/bootstrap.png" alt="Bootstrap"> Bootstrap</li>
+              <li><img src="assets/icons/tailwinds.png" alt="Tailwinds"> Tailwinds</li>
+              <li><img src="assets/icons/angular.png" alt="Angular"> Angular</li>
+            </ul>
 
-      <div class="col-md-5 p-2">
+            <div class="project-description">
+              <p>Aplicación web <strong>en desarollo</strong>.</p>
+            </div>
+            <div class="container d-flex justify-content-between">
+              <button class="btn btn-custom" (click)="corevit()">Ver proyecto</button>
+              <!-- <button class="btn btn-custom" (click)="verCodigoVeterianria()">Ver codigo</button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-4 p-2">
         <!-- RESTAURANTE -->
         <div class="card mb-3">
           <img id="veterinaria" src="assets/restaurante.png" class="card-img-top" alt="Imagen de proyecto"> <br><br>
@@ -19,6 +45,10 @@
               <li><img src="assets/icons/supabase.png" alt="Supabase"> Supabase</li>
             </ul>
 
+            <div class="project-description">
+              <p>Aplicación web completa para gestionar la presencia online de un restaurante.</p>
+            </div>
+
             <div class="container d-flex justify-content-between">
               <button class="btn btn-custom" (click)="restaurante()">Ver proyecto</button>
               <button class="btn btn-custom" (click)="verCodigoRestaurante()">Ver codigo</button>
@@ -32,7 +62,7 @@
       </div>
 
 
-      <div class="col-md-5 p-2">
+      <div class="col-md-4 p-2">
         <!-- VETERINARIA -->
         <div class="card mb-3">
           <img id="veterinaria" src="assets/veterinaria.png" class="card-img-top" alt="Imagen de proyecto"> <br><br>
@@ -47,6 +77,10 @@
               <li><img src="assets/icons/angular.png" alt="Angular"> Angular</li>
               <li><img src="assets/icons/supabase.png" alt="Supabase"> Supabase</li>
             </ul>
+
+            <div class="project-description">
+              <p>Aplicación web completa para gestionar una veterinaria.</p>
+            </div>
             <div class="container d-flex justify-content-between">
               <button class="btn btn-custom" (click)="veterinaria()">Ver proyecto</button>
               <button class="btn btn-custom" (click)="verCodigoVeterianria()">Ver codigo</button>
@@ -54,8 +88,6 @@
           </div>
         </div>
       </div>
-
-
 
 
     </div>

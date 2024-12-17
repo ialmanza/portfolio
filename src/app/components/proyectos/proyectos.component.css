@@ -154,6 +154,11 @@ a {
   font-weight: bold;
 }
 
+.project-description {
+  font-size: 14px;
+  margin-top: 10px; /* Adjust spacing as needed */
+}
+
 /* Media query para tablets */
 @media (min-width: 769px) and (max-width: 1024px) {
   .skills-list li {
