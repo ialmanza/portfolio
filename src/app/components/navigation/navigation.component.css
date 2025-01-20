@@ -68,8 +68,8 @@ a:hover{
   position: fixed;
   top: 0;
   right: 0;
-  width: 50vw; /* Solo ocupa la mitad derecha de la pantalla */
-  height: 110vh; /* Mantiene la altura completa de la pantalla */
+  width: 50vw;
+  height: 110vh;
   background-color: #f8f9fa;
   display: flex;
   flex-direction: column;
@@ -89,7 +89,7 @@ a:hover{
 }
 
 .mobile-nav-links {
-  justify-content: center; /* Centra los enlaces verticalmente */
+  justify-content: center;
   gap: 15px;
 }
 
@@ -116,16 +116,16 @@ a:hover{
 }
 
 body.menu-open {
-  overflow: hidden; /* Desactiva el scroll en toda la página */
+  overflow: hidden;
 }
 
 @media (max-width: 768px) {
   .navbar-buttons {
-    display: none; /* Oculta los botones normales en móviles */
+    display: none;
   }
 
   .mobile-nav-links {
-    display: flex; /* Asegura que el menú se muestre correctamente */
+    display: flex;
   }
 
   .menu-icon {
