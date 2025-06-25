@@ -15,7 +15,7 @@ export class SobreMiComponent {
     name: 'Israel Almanza',
     title: 'Desarrollador de Software',
     subtitle: 'Apasionado por construir soluciones innovadoras',
-    profileImage: '/assets/Israel Almanza.jpeg',
+    profileImage: '/assets/Israel-Almanza.jpeg',
     description: `Soy un desarrollador de software experimentado con al menos 3 años  de experiencia comprobable en el desarrollo y mantenimiento de aplicaciones de alta calidad. Mi especialidad es el desarrollo integral, con un enfoque en la creación de soluciones escalables y eficientes. Me apasiona mantenerme al día con las últimas tecnologías y mejorar continuamente mis habilidades.`
   };
 
