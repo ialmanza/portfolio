@@ -1,70 +1,246 @@
-.h1{
-  font-family: 'Montserrat', sans-serif;
-
-}
-
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
-}
-header {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 20px 0;
-}
-.container {
+/* Contenedor principal */
+.profile-container {
+  position: relative;
+  display: flex;
+  width: 100%;
   max-width: 800px;
-  margin: 20px auto;
-  padding: 0 20px;
-}
-h1 {
-  color: #333;
-  text-align: center;
-}
-p, li {
-  color: #666;
-  text-align: justify;
-}
-.about-me {
-  margin-top: 30px;
+  margin: 0 auto;
+  flex-direction: column;
+  background-color: #f8fafc;
+  justify-content: flex-start;
+  font-family: Manrope, "Noto Sans", sans-serif;
+  padding: 0 1rem;
+  overflow-x: hidden;
+  margin-top: 10px;
+  border-radius: 12px;
 }
 
-.skills-section {
-  margin-top: 30px;
-}
 
-.skills-heading {
-  text-align: center;
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-.skills-list {
+/* Sección de perfil */
+.profile-section {
   display: flex;
-  flex-wrap: wrap;
+  padding: 2rem 0;
   justify-content: center;
-  list-style: none;
-  padding: 0;
 }
 
-.skills-list li {
-  margin: 10px;
+.profile-content {
   display: flex;
+  width: 100%;
+  max-width: 600px;
+  flex-direction: column;
+  gap: 2rem;
   align-items: center;
-  font-size: 18px;
 }
 
-.skills-list img {
-  width: 24px;
-  height: 24px;
-  margin-right: 8px;
+.profile-info-wrapper {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-strong {
-  font-weight: bold;
-  color: #212529
+/* Imagen de perfil */
+.profile-image {
+  aspect-ratio: 1;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  border: 4px solid #ffffff;
 }
 
+/* Información personal */
+.personal-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.profile-name {
+  color: #0d141c;
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+  text-align: center;
+  margin: 0;
+}
+
+.profile-title {
+  color: #49739c;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.4;
+  text-align: center;
+  margin: 0;
+}
+
+.profile-subtitle {
+  color: #49739c;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  margin: 0;
+  opacity: 0.8;
+}
+
+/* Descripción personal */
+.profile-description {
+  color: #0d141c;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.7;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 3rem;
+  padding: 0 1rem;
+}
+
+/* Títulos de sección */
+.section-title {
+  color: #0d141c;
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.025em;
+  text-align: center;
+  margin: 2rem 0 1.5rem;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background-color: #49739c;
+  border-radius: 2px;
+}
+
+/* Sección de Educación */
+.education-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  background-color: #ffffff;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border-left: 4px solid #49739c;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.education-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.education-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.education-degree {
+  color: #0d141c;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.education-period {
+  color: #49739c;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.4;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.education-description {
+  color: #4a5568;
+  font-size: 0.95rem;
+  font-weight: 400;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Espaciador inferior */
+.bottom-spacer {
+  height: 3rem;
+  background-color: #f8fafc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .profile-container {
+    padding: 0 0.5rem;
+  }
+
+  .profile-image {
+    width: 120px;
+    height: 120px;
+  }
+
+  .profile-name {
+    font-size: 1.875rem;
+  }
+
+  .profile-title {
+    font-size: 1.125rem;
+  }
+
+  .profile-description {
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .education-item {
+    padding: 1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .education-degree {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-section {
+    padding: 1.5rem 0;
+  }
+
+  .profile-info-wrapper {
+    gap: 1.5rem;
+  }
+
+  .profile-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .profile-name {
+    font-size: 1.625rem;
+  }
+
+  .section-title {
+    margin: 1.5rem 0 1rem;
+  }
+}

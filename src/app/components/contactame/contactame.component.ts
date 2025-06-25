@@ -2,13 +2,14 @@ import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import emailjs from '@emailjs/browser';
+import { FooterComponent } from "../footer/footer.component";
 
 
 
 @Component({
   selector: 'app-contactame',
   standalone: true,
-  imports: [ ReactiveFormsModule],
+  imports: [ReactiveFormsModule, FooterComponent],
   templateUrl: './contactame.component.html',
   styleUrl: './contactame.component.css'
 })

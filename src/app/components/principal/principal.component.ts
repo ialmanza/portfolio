@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
+import { FooterComponent } from "../footer/footer.component";
 
 @Component({
     selector: 'app-principal',
     standalone: true,
     templateUrl: './principal.component.html',
     styleUrl: './principal.component.css',
-    imports: []
+    imports: [FooterComponent]
 })
 export class PrincipalComponent {
 

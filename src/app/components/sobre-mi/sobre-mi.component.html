@@ -1,52 +1,78 @@
 
-    <div class="container">
-        <section class="about-me">
+  <div class="profile-container">
+  <div>
 
-            <p>
-Soy un desarrollador de software apasionado y enérgico, actualmente en el último año de la carrera de Programación de Computadoras en la Universidad de Belgrano, Buenos Aires. <br><br>
-A lo largo de mi formación y experiencia profesional, he adquirido habilidades sólidas en diversas tecnologías y metodologías de desarrollo. A continuación, detallo algunas de las experiencias más relevantes de mi trayectoria:
-<br><br>
+    <!-- Sección de perfil -->
+    <div class="profile-section">
+      <div class="profile-content">
+        <div class="profile-info-wrapper">
+          <!-- Imagen de perfil -->
+          <img
+            class="profile-image"
+            [src]="profileData.profileImage"
+            [alt]="profileData.name + ' profile image'"
+            (error)="onImageError($event)"
+          />
 
-<strong>Fullstack Developer</strong> <br>
-Empresa Clandestino, México <br>
-Septiembre 2024 – Actualidad <br><br>
-
-<li>Diseñé e implementé interfaces de usuario dinámicas y funcionales utilizando Angular para garantizar una experiencia óptima y profesional.</li> <br>
-<li>Desarrollé y optimicé endpoints RESTful con Node.js y Express, asegurando un rendimiento eficiente y una integración fluida con el frontend.</li> <br>
-<li>Implementé y gestioné la base de datos con MongoDB, garantizando la persistencia de datos y la integridad de la información.</li> <br>
-<li>Creé un sistema de inventario completo para gestionar productos, abarcando desde el diseño de la interfaz hasta la persistencia de datos.</li> <br>
-<li>Manejo eficiente de tablas dinámicas, filtrado y búsqueda para facilitar la administración de productos.</li> <br>
-<li>Participé en el ciclo de desarrollo completo, desde la conceptualización y diseño hasta la implementación y mantenimiento de funcionalidades clave.</li> <br>
-<li>Aseguré la calidad del código mediante buenas prácticas y colaboré con otros equipos para implementar soluciones que cumplieran con los requerimientos del cliente.</li> <br>
-Tecnologías utilizadas: Angular, Node.js, Express, MongoDB, HTML, CSS, JavaScript. <br><br>
-
-
-<strong>Desarrollador de Funcionalidades en ERP</strong> <br><br>
-Contribuí en el desarrollo de funcionalidades para un ERP especializado en la gestión de ventas e importaciones de productos de neumática, robótica y electrónica. Mi labor incluyó la implementación de un sistema de login seguro, así como el desarrollo de tablas y funcionalidades CRUD para la gestión de datos. Trabajo con tecnologías como Prado, HTML, CSS y PHP empezando en febrero de 2024 hasta septiembre de 2024. <br><br>
-
-<strong>Desarrollador de Software en Centro de Recreación</strong> <br><br>
-Formé parte del equipo de desarrollo de un sistema de gestión para un centro de recreación, donde se implementaron funciones clave como la creación de ventas, gestión de pagos y visualización de productos. Los usuarios podían agregar productos a un carrito de compras y realizar transacciones de manera eficiente. Utilicé un stack tecnológico compuesto por Angular, HTML, CSS, JavaScript y TypeScript durante un período de tres meses.
-<br><br>
-
-Además de mi experiencia práctica, poseo conocimientos en Java, Python y C, adquiridos a nivel estudiantil y aplicados en diversos proyectos académicos. Estas experiencias me han permitido desarrollar una sólida base en programación y resolución de problemas, preparándome para enfrentar desafíos más complejos en el ámbito laboral. <br><br>
-
-Estoy entusiasmado por seguir creciendo y aprender nuevas tecnologías, con el objetivo de contribuir de manera significativa en proyectos innovadores y de alto impacto.
+          <!-- Información personal -->
+          <div class="personal-info">
+            <p class="profile-name">
+              {{ profileData.name }}
             </p>
-        </section>
-    </div>
-    <div class="row skills-section">
-      <div class="col-12">
-        <h2 class="skills-heading">Habilidades</h2>
-        <ul class="skills-list">
-          <li><img src="assets/icons/html.png" alt="HTML"> HTML</li>
-          <li><img src="assets/icons/css-3.png" alt="CSS"> CSS</li>
-          <li><img src="assets/icons/javascript.png" alt="JavaScript"> JavaScript</li>
-          <li><img src="assets/icons/typescript.png" alt="TypeScript"> TypeScript</li>
-          <li><img src="assets/icons/bootstrap.png" alt="Bootstrap"> Bootstrap</li>
-          <li><img src="assets/icons/angular.png" alt="Angular"> Angular</li>
-          <li><img src="assets/icons/java.png" alt="Java"> Java</li>
-          <li><img src="assets/icons/python.png" alt="Python"> Python</li>
-          <li><img src="assets/icons/supabase.png" alt="Supabase"> Supabase</li>
-        </ul>
+            <p class="profile-title">
+              {{ profileData.title }}
+            </p>
+            <p class="profile-subtitle">
+              {{ profileData.subtitle }}
+            </p>
+          </div>
+        </div>
       </div>
     </div>
+
+    <!-- Descripción personal -->
+    <p class="profile-description">
+      {{ profileData.description }}
+    </p>
+
+    <!-- Sección de Educación -->
+    <h2 class="section-title">
+      Educación
+    </h2>
+    <div class="education-item">
+      <div class="education-content">
+        <p class="education-degree">
+          {{ education.degree }}
+        </p>
+        <p class="education-period">
+          {{ education.period }}
+        </p>
+        <p class="education-description">
+          {{ education.description }}
+        </p>
+      </div>
+    </div>
+
+    <div class="education-item">
+      <div class="education-content">
+        <p class="education-degree">
+          {{ education2.degree }}
+        </p>
+        <p class="education-period">
+          {{ education2.period }}
+        </p>
+        <p class="education-description">
+          {{ education2.description }}
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Espaciador inferior -->
+  <div>
+    <div class="bottom-spacer"></div>
+  </div>
+</div>
+
+<app-footer></app-footer>
