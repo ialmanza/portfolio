@@ -1,0 +1,76 @@
+ <!-- Backdrop -->
+    <div
+      *ngIf="isOpen"
+      class="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm z-50 flex items-center justify-center p-4 transition-opacity duration-300"
+      [class.opacity-0]="!isAnimating"
+      [class.opacity-100]="isAnimating"
+      (click)="onBackdropClick()">
+
+      <!-- Modal Container -->
+      <div
+        class="bg-white rounded-2xl shadow-2xl max-w-md w-full mx-4 transform transition-all duration-300"
+        [class.scale-95]="!isAnimating"
+        [class.scale-100]="isAnimating"
+        (click)="$event.stopPropagation()">
+
+        <!-- Header with Icon -->
+        <div class="px-6 py-8 text-center">
+          <!-- Success Icon -->
+          <div
+            *ngIf="status?.success"
+            class="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-green-100 mb-4 animate-pulse">
+            <svg class="h-8 w-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+          </div>
+
+          <!-- Error Icon -->
+          <div
+            *ngIf="!status?.success"
+            class="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-red-100 mb-4 animate-pulse">
+            <svg class="h-8 w-8 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </div>
+
+          <!-- Title -->
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">
+            {{ status?.success ? '¡Mensaje Enviado!' : 'Error al Enviar' }}
+          </h3>
+
+          <!-- Message -->
+          <p class="text-gray-600 mb-1">
+            {{ status?.message }}
+          </p>
+
+          <!-- Details (if any) -->
+          <p *ngIf="status?.details" class="text-sm text-gray-500 mt-2">
+            {{ status?.details }}
+          </p>
+        </div>
+
+        <!-- Actions -->
+        <div class="px-6 pb-6">
+          <div class="flex gap-3">
+            <!-- Primary Action Button -->
+            <button
+              type="button"
+              (click)="onPrimaryAction()"
+              [class]="status?.success ?
+                'flex-1 bg-green-600 hover:bg-green-700 focus:ring-green-500' :
+                'flex-1 bg-red-600 hover:bg-red-700 focus:ring-red-500'"
+              class="px-4 py-2.5 text-sm font-medium text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 transition-colors duration-200">
+              {{ status?.success ? 'Perfecto' : 'Reintentar' }}
+            </button>
+
+            <!-- Secondary Action Button -->
+            <button
+              type="button"
+              (click)="onSecondaryAction()"
+              class="px-4 py-2.5 text-sm font-medium text-gray-700 bg-gray-100 hover:bg-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 transition-colors duration-200">
+              {{ status?.success ? 'Cerrar' : 'Cancelar' }}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
