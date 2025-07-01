@@ -80,7 +80,23 @@ export class ProyectosComponent {
       ],
       enlaceDemo: 'https://gestionarveterinaria.netlify.app/',
       enlaceCodigo: 'https://github.com/ialmanza/veterinaria_backup'
-    }
+    },
+    {
+      id: 4,
+      titulo: 'Calisthenics',
+      descripcion: 'Aplicación web en desarrollo.',
+      estado: 'En desarrollo',
+      imagen: 'assets/calistenia.webp',
+      tecnologias: [
+        { nombre: 'HTML', icono: 'assets/icons/html.png' },
+        { nombre: 'CSS', icono: 'assets/icons/css-3.png' },
+        { nombre: 'TypeScript', icono: 'assets/icons/typescript.png' },
+        { nombre: 'Tailwinds', icono: 'assets/icons/tailwinds.png' },
+        { nombre: 'Angular', icono: 'assets/icons/angular.png' },
+        { nombre: 'Supabase', icono: 'assets/icons/supabase.png' }
+      ],
+      enlaceDemo: 'https:calisthenicsflow.netlify.app/'
+    },
   ];
 
   constructor(private router: Router) { }
@@ -107,6 +123,11 @@ export class ProyectosComponent {
     window.open(this.proyectos[2].enlaceDemo, '_blank');
   }
 
+  calistenia(): void {
+    // Implementar navegación al proyecto Calistenia
+    window.open(this.proyectos[3].enlaceDemo, '_blank');
+  }
+
   verCodigoRestaurante(): void {
     // Implementar navegación al código del restaurante
     window.open(this.proyectos[1].enlaceCodigo, '_blank');
@@ -116,6 +137,8 @@ export class ProyectosComponent {
     // Implementar navegación al código de Veterinaria
     window.open(this.proyectos[2].enlaceCodigo, '_blank');
   }
+
+
 
   // Método helper para ejecutar la función correcta según el proyecto y acción
   getProjectMethod(projectId: number, action: string): void {
@@ -131,6 +154,9 @@ export class ProyectosComponent {
       case 3: // Veterinaria
         if (action === 'demo') this.veterinaria();
         if (action === 'codigo') this.verCodigoVeterianria();
+        break;
+      case 4: // Calistenia
+        if (action === 'demo') this.calistenia();
         break;
     }
   }
