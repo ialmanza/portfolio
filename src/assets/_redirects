@@ -1,0 +1,5 @@
+# Permitir acceso directo a PDFs
+/assets/*.pdf /assets/:splat 200
+
+# SPA fallback (debe ir al final)
+/*    /index.html   200

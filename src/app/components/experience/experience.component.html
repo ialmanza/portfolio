@@ -16,7 +16,7 @@
           </div>
           <div class="timeline-connector" *ngIf="i < experiences.length - 1"></div>
         </div>
-        <div class="timeline-content">
+        <div class="timeline-content" (click)="scrollToDescription(exp.id)" style="cursor: pointer;">
           <h3 class="job-title">{{ exp.title }}</h3>
           <p class="company-info">{{ exp.company }}</p>
         </div>
@@ -25,9 +25,10 @@
 
 
     <div class="descriptions">
-      <p class="description" *ngFor="let exp of experiences">
-        {{ exp.description }}
-      </p>
+      <div class="description-item" *ngFor="let exp of experiences" [id]="exp.id">
+        <h4 class="description-title">{{ exp.title }}</h4>
+        <p class="description">{{ exp.description }}</p>
+      </div>
     </div>
   </div>
 
