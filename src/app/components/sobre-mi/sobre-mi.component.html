@@ -2,11 +2,10 @@
   <div class="profile-container">
   <div>
 
-    <!-- Sección de perfil -->
     <div class="profile-section">
       <div class="profile-content">
         <div class="profile-info-wrapper">
-          <!-- Imagen de perfil -->
+
           <img
             class="profile-image"
             [src]="profileData.profileImage"
@@ -14,7 +13,6 @@
             (error)="onImageError($event)"
           />
 
-          <!-- Información personal -->
           <div class="personal-info">
             <p class="profile-name">
               {{ profileData.name }}
@@ -30,12 +28,10 @@
       </div>
     </div>
 
-    <!-- Descripción personal -->
     <p class="profile-description">
       {{ profileData.description }}
     </p>
 
-    <!-- Sección de Educación -->
     <h2 class="section-title">
       Educación
     </h2>
@@ -69,7 +65,6 @@
 
   </div>
 
-  <!-- Espaciador inferior -->
   <div>
     <div class="bottom-spacer"></div>
   </div>

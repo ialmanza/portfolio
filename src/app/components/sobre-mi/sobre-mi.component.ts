@@ -19,7 +19,6 @@ export class SobreMiComponent {
     description: `Soy un desarrollador de software experimentado con al menos 3 años  de experiencia comprobable en el desarrollo y mantenimiento de aplicaciones de alta calidad. Mi especialidad es el desarrollo integral, con un enfoque en la creación de soluciones escalables y eficientes. Me apasiona mantenerme al día con las últimas tecnologías y mejorar continuamente mis habilidades.`
   };
 
-  // Educación
   education = {
     degree: 'Técnico en Programación de Compuitadoras, Universidad de Belgrano',
     period: '2023 - 2025',
@@ -36,7 +35,6 @@ export class SobreMiComponent {
     console.log('Profile image path:', this.profileData.profileImage);
   }
 
-  // Método para manejar errores de carga de imagen
   onImageError(event: any): void {
     console.error('Error loading image:', event);
     console.log('Attempted to load:', this.profileData.profileImage);

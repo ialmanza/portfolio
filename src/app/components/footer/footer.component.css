@@ -1,6 +1,3 @@
-/* footer.component.css */
-
-/* Estilos existentes mejorados */
 .skills-section {
   margin-top: 30px;
   padding: 40px 0;
@@ -52,7 +49,6 @@
   flex-shrink: 0;
 }
 
-/* Footer profesional - CORREGIDO */
 .professional-footer {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
@@ -61,7 +57,7 @@
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
-  overflow-x: hidden; /* Previene scroll horizontal */
+  overflow-x: hidden;
 }
 
 .footer-content {
@@ -99,7 +95,6 @@
   background: rgba(255,255,255,0.3);
 }
 
-/* GRID CORREGIDO - Evita desbordamientos */
 .contact-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -140,7 +135,7 @@
   justify-content: center;
   margin-right: 15px;
   transition: background 0.3s ease, transform 0.2s ease;
-  flex-shrink: 0; /* No se encoge */
+  flex-shrink: 0;
   box-sizing: border-box;
 }
 
@@ -151,7 +146,7 @@
 
 .contact-details {
   flex: 1;
-  min-width: 0; /* Permite que el contenido se trunce si es necesario */
+  min-width: 0;
   box-sizing: border-box;
 }
 
@@ -254,11 +249,11 @@
   }
 }
 
-/* Animación de entrada CONTROLADA */
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(20px); /* Reducido para evitar desbordamiento */
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
@@ -279,7 +274,7 @@
 .contact-item:nth-child(3) { animation-delay: 0.3s; }
 .contact-item:nth-child(4) { animation-delay: 0.4s; }
 
-/* Asegurar que no haya desbordamiento en ningún elemento */
+
 * {
   box-sizing: border-box;
 }

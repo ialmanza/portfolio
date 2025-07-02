@@ -95,67 +95,57 @@ export class ProyectosComponent {
         { nombre: 'Angular', icono: 'assets/icons/angular.png' },
         { nombre: 'Supabase', icono: 'assets/icons/supabase.png' }
       ],
-      enlaceDemo: 'https:calisthenicsflow.netlify.app/'
+      enlaceDemo: 'https://calisthenicsflow.netlify.app/'
     },
   ];
 
   constructor(private router: Router) { }
 
 
-  // Métodos para navegación a los proyectos
   corevit(): void {
-    // Implementar navegación a CoreVit Studio
     window.open(this.proyectos[0].enlaceDemo, '_blank');
   }
 
   restaurante(): void {
-    // Implementar navegación al proyecto Restaurante
     window.open(this.proyectos[1].enlaceDemo, '_blank');
   }
 
   restauranteAdministrativo(): void {
-    // Implementar navegación al panel administrativo del restaurante
     window.open(this.proyectos[1].enlaceAdmin, '_blank');
   }
 
   veterinaria(): void {
-    // Implementar navegación al proyecto Veterinaria
     window.open(this.proyectos[2].enlaceDemo, '_blank');
   }
 
   calistenia(): void {
-    // Implementar navegación al proyecto Calistenia
     window.open(this.proyectos[3].enlaceDemo, '_blank');
   }
 
   verCodigoRestaurante(): void {
-    // Implementar navegación al código del restaurante
     window.open(this.proyectos[1].enlaceCodigo, '_blank');
   }
 
   verCodigoVeterianria(): void {
-    // Implementar navegación al código de Veterinaria
     window.open(this.proyectos[2].enlaceCodigo, '_blank');
   }
 
 
-
-  // Método helper para ejecutar la función correcta según el proyecto y acción
   getProjectMethod(projectId: number, action: string): void {
     switch (projectId) {
-      case 1: // CoreVit Studio
+      case 1:
         if (action === 'demo') this.corevit();
         break;
-      case 2: // Restaurante
+      case 2:
         if (action === 'demo') this.restaurante();
         if (action === 'codigo') this.verCodigoRestaurante();
         if (action === 'admin') this.restauranteAdministrativo();
         break;
-      case 3: // Veterinaria
+      case 3:
         if (action === 'demo') this.veterinaria();
         if (action === 'codigo') this.verCodigoVeterianria();
         break;
-      case 4: // Calistenia
+      case 4:
         if (action === 'demo') this.calistenia();
         break;
     }

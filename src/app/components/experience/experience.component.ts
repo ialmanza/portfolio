@@ -34,8 +34,6 @@ experiences = [
   ];
 
   goBack(): void {
-    // Implementa la lógica de navegación hacia atrás
-    // Por ejemplo: this.router.navigate(['/']);
     window.history.back();
   }
 }

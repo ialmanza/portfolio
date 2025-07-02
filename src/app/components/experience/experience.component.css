@@ -44,7 +44,7 @@
   width: 100%;
 }
 
-/* Header Styles */
+
 .header {
   display: flex;
   align-items: center;
@@ -99,7 +99,7 @@
   font-family: 'Manrope', sans-serif;
 }
 
-/* Timeline Styles */
+
 .timeline {
   display: grid;
   grid-template-columns: 48px 1fr;
@@ -229,7 +229,7 @@
   border-radius: 50%;
 }
 
-/* Descriptions Styles */
+
 .descriptions {
   padding: 0 2rem;
   margin-bottom: 2rem;
@@ -263,13 +263,13 @@
   border-left: 4px solid #764ba2;
 }
 
-/* Spacer */
+
 .spacer {
   height: 2rem;
   background: transparent;
 }
 
-/* Scrollbar Styles */
+
 .experience-container::-webkit-scrollbar {
   width: 6px;
 }
@@ -287,7 +287,7 @@
   background: linear-gradient(135deg, #5a67d8 0%, #6b46c1 100%);
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
   .header {
     padding: 1.25rem 1.5rem;
