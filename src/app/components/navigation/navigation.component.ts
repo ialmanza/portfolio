@@ -43,4 +43,19 @@ export class NavigationComponent {
     }
   }
 
+  descargarCV() {
+    const link = document.createElement('a');
+    link.href = 'assets/Israel Alamanza Curriculm Vitae.pdf';
+    link.download = 'Israel Alamanza Curriculm Vitae.pdf';
+    link.target = '_blank';
+
+    const event = new MouseEvent('click', {
+      view: window,
+      bubbles: true,
+      cancelable: true
+    });
+
+    link.dispatchEvent(event);
+  }
+
 }

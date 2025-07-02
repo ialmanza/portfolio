@@ -11,7 +11,7 @@
     <a href="/proyectos">Proyectos</a>
     <a href="/sobre-mi">Sobre Mi</a>
     <a href="/contactame">Contactame</a>
-    <a href="assets/Israel Alamanza Curriculm Vitae.pdf" download="Israel Alamanza Curriculm Vitae">CV</a>
+    <a (click)="descargarCV()" style="cursor: pointer;">CV</a>
     </div>
   </div>
 
@@ -22,7 +22,7 @@
     <a href="/proyectos" (click)="toggleMenu()">Proyectos</a>
     <a href="/sobre-mi" (click)="toggleMenu()">Sobre Mi</a>
     <a href="/contactame" (click)="toggleMenu()">Contactame</a>
-    <a href="assets/Israel Alamanza Curriculm Vitae.pdf" download="Israel Alamanza Curriculm Vitae">CV</a>
+    <a (click)="descargarCV(); toggleMenu()" style="cursor: pointer;">CV</a>
   </div>
 </nav>
 
