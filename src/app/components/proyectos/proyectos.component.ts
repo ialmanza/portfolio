@@ -50,6 +50,7 @@ export class ProyectosComponent {
       id: 2,
       titulo: 'Restaurante',
       descripcion: 'Aplicación web completa para gestionar la presencia online de un restaurante.',
+      estado: 'Refactorización en curso',
       imagen: 'assets/restaurante.png',
       tecnologias: [
         { nombre: 'HTML', icono: 'assets/icons/html.png' },

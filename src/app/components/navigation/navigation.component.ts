@@ -44,18 +44,13 @@ export class NavigationComponent {
   }
 
   descargarCV() {
-    const link = document.createElement('a');
-    link.href = 'assets/Israel Alamanza Curriculm Vitae.pdf';
-    link.download = 'Israel Alamanza Curriculm Vitae.pdf';
-    link.target = '_blank';
+  const link = document.createElement('a');
+  link.href = '/assets/Israel_Alamanza_CV.pdf';
+  link.download = 'Israel_Alamanza_CV.pdf';
 
-    const event = new MouseEvent('click', {
-      view: window,
-      bubbles: true,
-      cancelable: true
-    });
-
-    link.dispatchEvent(event);
-  }
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
 
 }
